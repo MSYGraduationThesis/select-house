@@ -1,0 +1,12 @@
+*~
+/log/
+*.http
+*.log
+config.json
+node_modules
+glide.lock
+.idea/
+### OSX ###
+.DS_Store
+*.exe
+main

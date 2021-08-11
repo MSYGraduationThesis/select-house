@@ -1,9 +1,9 @@
 package request
 
 type HouseModel struct {
-	TotalPrice      float64 `json:"total_price"`
-	TotalSize       float64 `json:"total_size"`
-	UnitPrice       float64 `json:"unit_price"`
+	TotalPrice float64 `json:"total_price"`
+	TotalSize  float64 `json:"total_size"`
+	//UnitPrice       float64 `json:"unit_price"`
 	QiShuiLv        float64 `json:"qi_shui_rate"`
 	YinHuaLv        float64 `json:"yin_hua_lv"`
 	ShouFuBili      float64 `json:"shou_fu_bili"`

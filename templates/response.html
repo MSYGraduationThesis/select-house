@@ -2,11 +2,8 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>用户信息</title>
+    <title>模型计算结果</title>
 </head>
-
-
-
 
 <style type="text/css">
     table.hovertable {
@@ -34,33 +31,51 @@
         border-color: #a9c6c9;
     }
 </style>
+<body>
 
-<!-- Table goes in the document BODY -->
-<table class="hovertable" align="center">
-    <tr>
-        <th>Info Header 1</th><th>Info Header 2</th><th>Info Header 3</th>
+</body>
+
+    <h3 align="center" > {{.tui_suan_nian_fen}}年后结果对照样本</h3>
+
+    <table class="hovertable" align="center">
+
+    <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4e3e5';">
+        <td>税费合计</td> <td> {{.result.ShuiFeiHeJi}}</td>
     </tr>
     <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4e3e5';">
-        <td>Item 1A</td><td>Item 1B</td><td>Item 1C</td>
+        <td>装修物业费合计</td> <td> {{.result.ZhuangXiuWuYeFeiHeji}}</td>
     </tr>
     <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4e3e5';">
-        <td>Item 2A</td><td>Item 2B</td><td>Item 2C</td>
+        <td>已经支付贷款</td> <td> {{.result.HasPaiDaiKuan}}</td>
     </tr>
     <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4e3e5';">
-        <td>Item 3A</td><td>Item 3B</td><td>Item 3C</td>
+        <td>已经支付总成本(房屋首付+其他费用+贷款已经出去)</td> <td> {{.result.HasPaidZongChengBen}}</td>
     </tr>
     <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4e3e5';">
-        <td>Item 4A</td><td>Item 4B</td><td>Item 4C</td>
+        <td>理财本息和</td> <td> {{.result.LiCaiBenXiHe}}</td>
     </tr>
     <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4e3e5';">
-        <td>Item 5A</td><td>Item 5B</td><td>Item 5C</td>
+        <td>房价需要增长百分数</td> <td> {{.result.FangJiaXuYaoZengZhangBaiFenShu}}</td>
     </tr>
+    <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4e3e5';">
+        <td>房子总价达到</td> <td> {{.result.FangJiZongJiaDaDao}}</td>
+    </tr>
+    <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4e3e5';">
+        <td>房子的总价值增长了</td> <td> {{.result.ZongJiaZhiZengZhangLe}}</td>
+    </tr>
+    <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4e3e5';">
+        <td>剩余贷款</td> <td> {{.result.ShengYuDaiKuan}}</td>
+    </tr>
+    <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4e3e5';">
+        <td>纯投房子收益</td> <td> {{.result.ChunTouFangZiShouYi}}</td>
+    </tr>
+    <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4e3e5';">
+        <td>纯理财收益</td> <td> {{.result.ChunLiCaiShouYi}}</td>
+    </tr>
+    <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4e3e5';">
+        <td>收益差</td> <td> {{.result.ShouYiCha}}</td>
+    </tr>
+
 </table>
-
-
-
-
-
-
 
 </html>

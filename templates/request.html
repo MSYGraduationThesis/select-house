@@ -5,60 +5,106 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Gin Hello</title>
+    <title>Welcome 真人工的智能平台</title>
 </head>
+        <h3 align="center" > Welcome Fake Artificial Intelligence Platform </h3>
+        <h5 align="center"> ---------------------------------------------------</h5>
 <body>
 
 <form action="http://localhost:80/sum" method="Post">
     <table border="1" align="center" cellpadding="1" cellspacing="2" >
         <tr>
-            <td width="125" height="35">用户名：</td>
-            <td width="300" ><input type="text" name="username"/></td>
+            <td width="125" height="35">房产总价：</td>
+            <td width="300" ><input type="text" name="total_price"/></td>
         </tr>
         <tr>
-            <td width="125" height="35">密码：</td>
-            <td width="300"><input type="password" name="pwd"/></td>
+            <td width="125" height="35">房产总面积：</td>
+            <td width="300"><input type="text" name="total_size"/></td>
+        </tr>
+<!--        <tr>-->
+<!--            <td width="125" height="35">房产单价：</td>-->
+<!--            <td width="300"><input type="text" name="unit_price"/></td>-->
+<!--        </tr>-->
+        <tr>
+            <td width="125" height="35" >契税税率</td>
+            <td width="300"><input type="text" name="qi_shui_rate"/></td>
         </tr>
         <tr>
-            <td width="125" height="35">性别:</td>
-            <td width="300">
-                <input type="radio" name="sex" value=1 />男
-                <input type="radio" name="sex" value=0 />女
-            </td>
+            <td width="125" height="35" >印花税税率</td>
+            <td width="300"><input type="text" name="yin_hua_lv"/></td>
         </tr>
         <tr>
-            <td width="125" height="35">爱好：</td>
-            <td width="300">
-                <input type="checkbox" name="hobby" value="basketball" />篮球
-                <input type="checkbox" name="hobby" value="football" />足球
-                <input type="checkbox" name="hobby" value="badminton" />羽毛球
-            </td>
+            <td width="125" height="35" >首付比例</td>
+            <td width="300"><input type="text" name="shou_fu_bili"/></td>
         </tr>
         <tr>
-            <td width="125" height="35">来自：</td>
-            <td width="300">
-                <select>
-                    <option value="上海">上海</option>
-                    <option value="北京">北京</option>
-                    <option value="广州">广州</option>
-                    <option value="成都">成都</option>
-                    <option value="郑州">郑州</option>
-                </select>
-            </td>
+            <td width="125" height="35" >首付比例</td>
+            <td width="300"><input type="text" name="shou_fu_bili"/></td>
         </tr>
         <tr>
-            <td width="125" height="35">照片：</td>
-            <td width="300">
-                <input type="file" name="photo">
-            </td>
+            <td width="125" height="35" >租金</td>
+            <td width="300"><input type="text" name="zujin"/></td>
         </tr>
         <tr>
-            <td width="125" height="35">介绍：</td>
-            <td width="300">
-                <textarea cols="50" rows="5"></textarea>
-            </td>
+            <td width="125" height="35" >贷款年限</td>
+            <td width="300"><input type="text" name="dai_kuan_nian_xian"/></td>
         </tr>
         <tr>
+            <td width="125" height="35" >贷款利率</td>
+            <td width="300"><input type="text" name="dai_kuan_li_lv"/></td>
+        </tr>
+        <tr>
+            <td width="125" height="35" >物业费单价(月)</td>
+            <td width="300"><input type="text" name="wu_ye_fei_dan_jia"/></td>
+        </tr>
+        <tr>
+            <td width="125" height="35" >理财利率(年)</td>
+            <td width="300"><input type="text" name="li_cai_li_lv"/></td>
+        </tr>
+        <tr>
+            <td width="125" height="35" >N年后差距(年)</td>
+            <td width="300"><input type="text" name="tui_suan_nian_fen"/></td>
+        </tr>
+<!--        <tr>-->
+<!--            <td width="125" height="35">性别:</td>-->
+<!--            <td width="300">-->
+<!--                <input type="radio" name="sex" value=1 />男-->
+<!--                <input type="radio" name="sex" value=0 />女-->
+<!--            </td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td width="125" height="35">爱好：</td>-->
+<!--            <td width="300">-->
+<!--                <input type="checkbox" name="hobby" value="basketball" />篮球-->
+<!--                <input type="checkbox" name="hobby" value="football" />足球-->
+<!--                <input type="checkbox" name="hobby" value="badminton" />羽毛球-->
+<!--            </td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td width="125" height="35">来自：</td>-->
+<!--            <td width="300">-->
+<!--                <select>-->
+<!--                    <option value="上海">上海</option>-->
+<!--                    <option value="北京">北京</option>-->
+<!--                    <option value="广州">广州</option>-->
+<!--                    <option value="成都">成都</option>-->
+<!--                    <option value="郑州">郑州</option>-->
+<!--                </select>-->
+<!--            </td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td width="125" height="35">照片：</td>-->
+<!--            <td width="300">-->
+<!--                <input type="file" name="photo">-->
+<!--            </td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td width="125" height="35">介绍：</td>-->
+<!--            <td width="300">-->
+<!--                <textarea cols="50" rows="5"></textarea>-->
+<!--            </td>-->
+<!--        </tr>-->
+<!--        <tr>-->
             <td width="125" height="35" colspan="2">
                 <input type="submit" value="提交数据"/>
                 <input type="reset" />
@@ -66,6 +112,9 @@
         </tr>
     </table>
 </form>
+
+
+
 
 
 
