@@ -1,6 +1,7 @@
 package handel
 
 import (
+	"fmt"
 	"github.com/gin-gonic/gin"
 	"net/http"
 	"select-house/request"
@@ -20,7 +21,8 @@ func GetHouseModelService(ctx *gin.Context) {
 
 func PostHouseModelService(ctx *gin.Context) {
 	req := request.HouseModel{}
-	if err := ctx.ShouldBindJSON(&req); err != nil {
+	if err := ctx.ShouldBind(&req); err != nil {
+		fmt.Println(err)
 		ctx.JSON(http.StatusBadRequest, gin.H{
 			"error": err.Error(),
 		})
